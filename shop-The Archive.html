@@ -1,136 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blackmatter — Logo Shop</title>
+  <title>The Archive - Blackmatter</title>
   <link rel="icon" href="images/B.png" type="image/png" sizes="32x32">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black text-gray-200">
+<body class="bg-black text-gray-200 font-sans">
 
-  <!-- NAVBAR SIMPLE -->
-  <nav class="sticky top-0 z-50 bg-black/50 backdrop-blur-xl border-b border-white/10">
-    <div class="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-      <a href="index.html#home" class="font-semibold tracking-widest">BLACKMATTER</a>
-      <a href="index.html#portfolio" class="text-sm hover:text-white">← Back</a>
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full bg-black/40 backdrop-blur-xl border-b border-white/10 z-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <div class="h-16 flex items-center justify-between">
+        <a href="index.html#home" class="flex items-center">
+          <img src="images/logo.png" class="h-9 w-auto" alt="Blackmatter Logo">
+        </a>
+        <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <li><a href="index.html#home" class="hover:text-white">Home</a></li>
+          <li><a href="shop-The Archive.html" class="text-white font-semibold">The Archive</a></li>
+          <li><a href="index.html#order" class="hover:text-white">Order</a></li>
+          <li><a href="index.html#profile" class="hover:text-white">Profile</a></li>
+          <li><a href="index.html#contact" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <!-- HERO / HEADER -->
-  <header class="relative overflow-hidden">
-    <div class="absolute inset-0">
-      <img src="images/Background.jpg" class="w-full h-full object-cover opacity-20" alt="">
-      <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black"></div>
-    </div>
-    <div class="relative max-w-7xl mx-auto px-4 py-14">
-      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold">Logo Custom — Shop</h1>
-      <p class="mt-3 text-gray-300 max-w-2xl">Pilih paket/logo yang kamu suka. Semua karya bisa dikustom sesuai brief.</p>
-    </div>
-  </header>
+  <!-- CONTENT -->
+  <section class="pt-24 pb-16 px-6 sm:px-12 bg-gradient-to-b from-black to-gray-900 min-h-screen">
+    <h1 class="text-3xl sm:text-4xl font-bold text-center mb-12 tracking-wide">The Archive</h1>
 
-  <!-- FILTER BAR (opsional) -->
-  <section class="max-w-7xl mx-auto px-4 py-6 border-y border-white/10 bg-black/30 backdrop-blur">
-    <div class="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
-      <div class="flex items-center gap-3">
-        <select class="bg-black/60 border border-white/10 rounded-lg px-3 py-2">
-          <option>All Styles</option>
-          <option>Metallic</option>
-          <option>Minimal</option>
-          <option>Grunge</option>
-        </select>
-        <select class="bg-black/60 border border-white/10 rounded-lg px-3 py-2">
-          <option>Sort: Featured</option>
-          <option>Termurah</option>
-          <option>Termahal</option>
-          <option>Terbaru</option>
-        </select>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <!-- Produk 1 -->
+      <div class="group relative rounded-2xl border border-white/10 overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+        <img src="images/Background.jpg" alt="Logo Custom" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-white">Logo Custom</h3>
+          <p class="text-gray-400 text-sm">Desain logo sesuai permintaanmu.</p>
+          <a href="shop-logo.html" class="inline-block mt-3 px-4 py-2 bg-white text-black rounded-lg font-medium hover:bg-gray-200">Lihat Detail</a>
+        </div>
       </div>
-      <div>
-        <input type="text" placeholder="Cari item…"
-               class="bg-black/60 border border-white/10 rounded-lg px-3 py-2 w-full sm:w-64">
+
+      <!-- Produk 2 -->
+      <div class="group relative rounded-2xl border border-white/10 overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+        <img src="images/logo.png" alt="Visual Editing" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-white">Visual Editing</h3>
+          <p class="text-gray-400 text-sm">Editing visual untuk kebutuhan bisnis/brand.</p>
+          <a href="shop-editing.html" class="inline-block mt-3 px-4 py-2 bg-white text-black rounded-lg font-medium hover:bg-gray-200">Lihat Detail</a>
+        </div>
       </div>
+
+      <!-- Produk 3 -->
+      <div class="group relative rounded-2xl border border-white/10 overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+        <img src="images/logo2.jpg" alt="Concept Art" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-white">Concept Art</h3>
+          <p class="text-gray-400 text-sm">Ilustrasi & konsep untuk proyek kreatif.</p>
+          <a href="shop-concept.html" class="inline-block mt-3 px-4 py-2 bg-white text-black rounded-lg font-medium hover:bg-gray-200">Lihat Detail</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- GRID PRODUK -->
-  <main class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    <!-- ITEM -->
-    <article class="group relative rounded-2xl border border-white/10 overflow-hidden bg-black/30 backdrop-blur-md">
-      <img src="images/Background.jpg" alt="Logo Metallic 01"
-           class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
-      <div class="p-5 space-y-3">
-        <h3 class="font-semibold text-lg">Logo Metallic 01</h3>
-        <p class="text-gray-400 text-sm">Format: PNG, SVG. 1x revisi minor. Estimasi 1–2 hari.</p>
-        <div class="flex items-center justify-between">
-          <span class="font-bold text-white">IDR 250K</span>
-          <div class="flex gap-2">
-            <a href="mailto:blackmatterrrr@gmail.com?subject=Order Logo Metallic 01&body=Halo, saya ingin memesan Logo Metallic 01…"
-               class="text-xs px-3 py-2 rounded-md bg-white text-black font-semibold hover:opacity-90">Order</a>
-            <button class="text-xs px-3 py-2 rounded-md bg-white/10 hover:bg-white/20"
-                    onclick="openPreview('images/Background.jpg','Logo Metallic 01')">Preview</button>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- DUPLIKASI item di atas untuk menambah katalog -->
-    <article class="group relative rounded-2xl border border-white/10 overflow-hidden bg-black/30 backdrop-blur-md">
-      <img src="images/logo.png" alt="Logo Minimal 02"
-           class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
-      <div class="p-5 space-y-3">
-        <h3 class="font-semibold text-lg">Logo Minimal 02</h3>
-        <p class="text-gray-400 text-sm">Format: PNG, SVG. 2x revisi minor. Estimasi 2–3 hari.</p>
-        <div class="flex items-center justify-between">
-          <span class="font-bold text-white">IDR 350K</span>
-          <div class="flex gap-2">
-            <a href="mailto:blackmatterrrr@gmail.com?subject=Order Logo Minimal 02&body=Halo, saya ingin memesan Logo Minimal 02…"
-               class="text-xs px-3 py-2 rounded-md bg-white text-black font-semibold hover:opacity-90">Order</a>
-            <button class="text-xs px-3 py-2 rounded-md bg-white/10 hover:bg-white/20"
-                    onclick="openPreview('images/logo.png','Logo Minimal 02')">Preview</button>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <!-- …tambahkan item lain sesukamu -->
-  </main>
-
-  <!-- MODAL PREVIEW -->
-  <div id="previewModal" class="fixed inset-0 hidden items-center justify-center bg-black/70 backdrop-blur-md z-50">
-    <div class="max-w-3xl w-[92%] bg-black/60 border border-white/10 rounded-2xl overflow-hidden">
-      <div class="flex items-center justify-between px-4 py-3 border-b border-white/10">
-        <h4 id="previewTitle" class="font-semibold">Preview</h4>
-        <button onclick="closePreview()" class="px-3 py-1 rounded-md bg-white/10 hover:bg-white/20">Tutup</button>
-      </div>
-      <img id="previewImg" src="" alt="" class="w-full max-h-[70vh] object-contain bg-black">
-    </div>
-  </div>
-
-  <script>
-    const modal = document.getElementById('previewModal');
-    const imgEl = document.getElementById('previewImg');
-    const titleEl = document.getElementById('previewTitle');
-
-    function openPreview(src, title){
-      imgEl.src = src;
-      titleEl.textContent = title || 'Preview';
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-    }
-    function closePreview(){
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
-      imgEl.src = '';
-    }
-    // tutup modal jika klik area gelap
-    modal?.addEventListener('click', (e)=>{
-      if(e.target === modal) closePreview();
-    });
-  </script>
-
-  <footer class="py-8 text-center text-gray-500 border-t border-white/10">
-    © 2025 Blackmatter. All rights reserved.
-  </footer>
 </body>
 </html>
